@@ -1,0 +1,29 @@
+.nav {
+  &-top {
+    width: 60%;
+    display: none;
+    @include breakpoint(medium) {
+      display: block;
+    }
+    &__list {
+      width: 100%;
+      @include row();
+      justify-content: flex-end;
+    }
+    &__item:not(:first-child) {
+      margin-left: rem-calc(15);
+    }
+    &__link {
+      @include link(14);
+      line-height: rem-calc(52);
+      &:hover, &:focus {
+        color: $yellow;
+      }
+    } 
+  }
+}
+
+
+
+
+

@@ -1,0 +1,54 @@
+.header {
+	&-top {
+		width: 100%;
+		background-color: $black;
+		height: rem-calc(52);
+		&__link {
+			display: block;
+			padding-right: rem-calc(10);
+			@include link(14);
+			color: $yellow;
+			line-height: rem-calc(52);
+			position: relative;
+			&::after {
+				content: ">";
+				font-size: rem-calc(14);
+				position: absolute;
+				color: $yellow;
+				right: -10px;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				transition: color .4s ease-in;
+			}
+			&:hover, &:focus {
+				color: $white;
+				&::after {
+					color: $white;
+				}
+			}
+		}
+	}
+	&__row {
+		background-color: $main-nav-bg;
+	}
+	&__container {
+		position: relative;
+		@include row();
+		justify-content: space-between;
+	}
+	&__logo {
+		width: 20%;
+		min-width: rem-calc(150);
+		transition: all .4s ease-in;
+		@include row();
+		align-items: center;
+		&:hover {
+			transform: scale(1.05, 1.05);
+		}
+	}
+	&__img {
+		max-width: rem-calc(198);
+		max-height: rem-calc(73);
+	}
+}
