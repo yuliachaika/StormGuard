@@ -1,5 +1,5 @@
 .main-nav {
-	width: 78%;
+	width: 75%;
 	@include row();
 	align-items: center;
 	@include breakpoint(medium down) {
@@ -40,7 +40,8 @@
 	}
 	&__link {
 		display: block;
-		@include link(15);
+		@include text-bold(16);
+		line-height: rem-calc(24);
 		&:hover, &:focus {
 			color: $yellow;
 		}

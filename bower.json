@@ -10,7 +10,8 @@
     "assets/components"
   ],
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "slick-carousel": "^1.8.1"
   },
   "authors": [
     "Yulia <yulia.chaika@icloud.com>"

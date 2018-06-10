@@ -1,4 +1,6 @@
 .header {
+	position: relative;
+	z-index: 10;
 	&-top {
 		width: 100%;
 		background-color: $black;
@@ -6,36 +8,24 @@
 		&__link {
 			display: block;
 			padding-right: rem-calc(10);
-			@include link(14);
+			@include text-bold(14);
 			color: $yellow;
 			line-height: rem-calc(52);
-			position: relative;
-			&::after {
-				content: ">";
-				font-size: rem-calc(14);
-				position: absolute;
-				color: $yellow;
-				right: -10px;
-				top: 0;
-				bottom: 0;
-				margin: auto;
-				transition: color .4s ease-in;
-			}
-			&:hover, &:focus {
-				color: $white;
-				&::after {
-					color: $white;
-				}
-			}
+			@include arrow();
 		}
 	}
 	&__row {
 		background-color: $main-nav-bg;
+		// z-index: 2;
 	}
 	&__container {
 		position: relative;
 		@include row();
 		justify-content: space-between;
+		&--padding {
+			padding-top: rem-calc(3);
+			padding-bottom: rem-calc(3);
+		}
 	}
 	&__logo {
 		width: 20%;
@@ -48,6 +38,7 @@
 		}
 	}
 	&__img {
+		margin-top: rem-calc(1);
 		max-width: rem-calc(198);
 		max-height: rem-calc(73);
 	}

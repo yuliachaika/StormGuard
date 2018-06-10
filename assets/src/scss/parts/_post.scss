@@ -1,0 +1,63 @@
+.post {
+	border: 1px solid $light-gray-border;
+	@include three-col-item();
+	&-img {
+		&__wrap {
+			position: relative;
+		}
+		&__info {
+			width: rem-calc(61);
+			height: rem-calc(61);
+			background-color: $yellow;
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include col();
+			justify-content: center;
+			align-items: center;
+			@include title(16, $black);
+			line-height: rem-calc(20);
+			text-transform: uppercase;
+		}
+		&__text {
+			font-size: rem-calc(28);
+			line-height: rem-calc(32);
+		}
+	}
+	&__content {
+		padding: rem-calc(11) rem-calc(16) rem-calc(18);
+		border-bottom: 1px solid $light-gray-border;
+	}
+	&__title {
+		margin-bottom: rem-calc(6);
+		display: block;
+		@include title(28, $black);
+		line-height: rem-calc(34);
+	}
+	&__text {
+		@include text($black);
+		&--link {
+			color: $red;
+			border-bottom: 1px solid;
+			transition: border-color .3s linear;
+			&:hover {
+				cursor: pointer;
+				border-color: transparent;
+			}
+		}
+	}
+	&__author {
+		padding: rem-calc(14) rem-calc(16);
+		@include text-bold(14);
+		line-height: rem-calc(14);
+		text-transform: uppercase;
+		color: $black;
+	}
+}
+
+
+
+
+
+
+

@@ -59,6 +59,7 @@ gulp.task('fonts', function() {
 gulp.task('javascript', function() {
     return gulp.src([
       'assets/components/jquery/dist/jquery.js',
+      'assets/components/slick-carousel/slick/slick.js',
       'assets/components/foundation-sites/dist/js/plugins/foundation.core.js',
       'assets/components/foundation-sites/dist/js/plugins/foundation.util.*',
       // 'assets/components/foundation-sites/dist/js/plugins/foundation.drilldown.js',
