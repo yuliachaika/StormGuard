@@ -1,0 +1,15 @@
+.title-text {
+	margin-bottom: rem-calc(26);
+	@include col();
+	align-items: center;
+	&__title {
+		margin-bottom: rem-calc(6);
+		@include title(32, $red);
+		text-align: center;
+	}
+	&__text {
+		max-width: rem-calc(450);
+		@include text($black);
+		text-align: center;
+	}
+}

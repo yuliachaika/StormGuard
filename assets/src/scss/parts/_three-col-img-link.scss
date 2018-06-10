@@ -1,0 +1,26 @@
+.three-col-img-link {
+	margin-bottom: rem-calc(21);
+	&__wrap {
+		@include col();
+		align-items: center;
+		@include breakpoint(large) {
+			@include row();
+			align-items: inherit;
+			justify-content: space-between;
+		}
+	}
+	&__item {
+		@include three-col-item();
+	}
+	&__link {
+		width: 100%;
+		@include arrow();
+		@include btn($black, 12, 41);
+	}
+	&__img {
+		&-wrap {
+			background-color: $black;
+			overflow: hidden;
+		}
+	}
+}

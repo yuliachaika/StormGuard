@@ -17,7 +17,22 @@
   */
   $( function() {
 
+    //slider-block
+    $('.slider__wrap').slick({
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      fade: true,
+      arrows: false,
+      respondTo: 'window',
+      autoplay: true,
+      autoplaySpeed: 2000,
+      appendDots: $('.slider__nav'),
+      dots: true,
+      dotsClass: 'custom-dots-slider'
+    });
 
+   //responsive menu       
   	$('.main-nav__toggle').click(function(e) {
 			$('.main-nav__list').slideToggle('slow');
 			e.preventDefault();

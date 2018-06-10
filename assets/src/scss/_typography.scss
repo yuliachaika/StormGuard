@@ -1,15 +1,15 @@
 // Font-family 
 @font-face {
     font-family:'Eurostile LT Std - Demi';
-    src: url('../fonts/EurostileTRegExt.eot');
-		src: url('../fonts/EurostileTRegExt.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/EurostileTRegExt.woff2') format('woff2'),
-		url('../fonts/EurostileTRegExt.woff') format('woff'),
-		url('../fonts/EurostileTRegExt.svg#EurostileTRegExt') format('svg');
+    src: url('../fonts/EurostileLTStd-Demi.eot');
+		src: url('../fonts/EurostileLTStd-Demi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/EurostileLTStd-Demi.woff2') format('woff2'),
+		url('../fonts/EurostileLTStd-Demi.woff') format('woff'),
+		url('../fonts/EurostileLTStd-Demi.svg#EurostileLTStd-Demi') format('svg');
     font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-EA6A;
+    // font-style: normal;
+    // font-stretch: normal;
+    // unicode-range: U+0020-EA6A;
 }
 
 @font-face {
@@ -20,9 +20,9 @@
 		url('../fonts/Helvetica.woff') format('woff'),
 		url('../fonts/Helvetica.svg#Helvetica') format('svg');
     font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-2215;
+    // font-style: normal;
+    // font-stretch: normal;
+    // unicode-range: U+0020-2215;
 }
 
 //font-awesome
@@ -31,25 +31,44 @@
 
 //fonts variables
 $primary-font-family: 'Eurostile LT Std - Demi', 'Arial', sans-serif;
-$second-font-family: 'Helvetica', 'Arial', sans-serif;
+// $second-font-family: 'Helvetica', 'Arial', sans-serif;
+$second-font-family: 'Arial', sans-serif;
 
 //fonts mixins
-@mixin link($px) {
+@mixin text-bold($px) {
   color: $white;
   font-family: $second-font-family;
   font-size: rem-calc($px);
   font-weight: 700;
   text-transform: capitalize;
-  // line-height: 1.3; 
+
 }
 
-// @mixin text($px, $color) {
-//   color: $color;
-//   font-family: $primary-font;
-//   font-size: rem-calc($px);
-//   font-weight: 300;
-//   line-height: 1.3; 
-// }
+@mixin title($px, $color) {
+  color: $color;
+  font-family: $primary-font-family;
+  font-size: rem-calc($px);
+  font-weight: 400;
+}
+
+@mixin text($color) {
+  color: $color;
+  font-family: $second-font-family;
+  font-size: rem-calc(16);
+  line-height: rem-calc(24);
+  font-weight: 400;
+}
+
+@mixin text-italics($px) {
+  color: $black;
+  font-family: $second-font-family;
+  font-size: rem-calc($px);
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
 // @mixin title($px, $color) {
 //   color: $color;
 //   font-family: $primary-font;

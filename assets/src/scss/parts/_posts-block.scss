@@ -1,0 +1,27 @@
+.posts-block {
+	// border: 1px solid;
+	padding: rem-calc(28) 0;
+	&__container {
+		@include col();
+		align-items: center;
+	}
+	&__title {
+		margin-bottom: rem-calc(26);
+		@include title(32, $red);
+		line-height: rem-calc(32);
+		text-align: center;
+		text-transform: capitalize;
+	}
+	&__wrap {
+		@include col();
+		align-items: center;
+		@include breakpoint(large) {
+    	@include row();
+			justify-content: space-between;
+  	}
+	}
+	&__btn {
+		@include btn($black, 54, 62);
+	}
+}
+	

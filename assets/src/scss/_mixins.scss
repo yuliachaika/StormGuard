@@ -10,50 +10,102 @@
 	flex-wrap: no-wrap;
 }
 
-// @mixin btn() {
-//   color: $white;
-//   height: rem-calc(40);
-//   line-height: rem-calc(32);
-//   border-radius: rem-calc(30);
-//   font-family: $primary-font;
-//   font-size: rem-calc(14);
-//   font-weight: 400;
-//   text-align: center;
-// }
+@mixin bg($url) {
+  background-image: url($url); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+@mixin arrow() {
+  position: relative;
+  &::after {
+    content: ">";
+    font-size: rem-calc(14);
+    margin-left: rem-calc(9);
+  }
+  &:hover, &:focus {
+    color: $white;
+  } 
+}
 
-// @mixin placeholder() {
-//   &::-webkit-input-placeholder, 
-//   &::-moz-placeholder,
-//   &:-moz-placeholder, 
-//   &:-ms-input-placeholder {
-//     color: $light-gray !important;
-//     font-weight: 300;
-//     transition: all .3s ease-out;
-//   }
-//   &::placeholder {
-//     color: $light-gray;
-//     font-weight: 300;
-//     transition: all .3s ease-out;
-//   }
-// }
+@mixin btn($color, $pd, $lh) {
+  display: inline-block; 
+  padding: 0 rem-calc($pd);
+  min-width: rem-calc(122);
+  height: rem-calc($lh);
+  @include text-bold(16); 
+  color: $color;
+  line-height: rem-calc($lh); 
+  transition-property: background-color, color;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+  @if $color == $red {
+      background-color: $white;
+      &:hover {
+        cursor: pointer;
+        color: $black;  
+      }  
+    } 
+   @else if $color == $white {
+			background-color: $red;
+      &:hover {
+        cursor: pointer;
+        color: $black;  
+      }  
+    }
+    @else if $color == $black {
+			background-color: $yellow;
+      &:hover {
+        cursor: pointer;
+        color: $white;  
+      }  
+   }
+}
 
-// @mixin placeholder-hov() {
-//   &::-webkit-input-placeholder, 
-//   &::-moz-placeholder,
-//   &:-moz-placeholder, 
-//   &:-ms-input-placeholder {
-//     color: $light-gray !important;
-//     font-weight: 300;
-//     opacity: 0;
-//   }
-//   &::placeholder {
-//     color: $light-gray;
-//     font-weight: 300;
-//     opacity: 0;
-//   }
-// }
+@mixin placeholder() {
+  &::-webkit-input-placeholder, 
+  &::-moz-placeholder,
+  &:-moz-placeholder, 
+  &:-ms-input-placeholder {
+    color: $light-gray !important;
+    font-weight: 400;
+    transition: all .4s ease-out;
+  }
+  &::placeholder {
+    color: $light-gray;
+    font-weight: 400;
+    transition: all .4s ease-out;
+  }
+}
 
+@mixin placeholder-hov() {
+  &::-webkit-input-placeholder, 
+  &::-moz-placeholder,
+  &:-moz-placeholder, 
+  &:-ms-input-placeholder {
+    color: $light-gray !important;
+    font-weight: 400;
+    opacity: 0;
+  }
+  &::placeholder {
+    color: $light-gray;
+    font-weight: 400;
+    opacity: 0;
+  }
+}
+
+@mixin three-col-item() {
+  margin-bottom: rem-calc(30);
+  max-width: rem-calc(384);
+  @include breakpoint(small only) {
+    max-width: rem-calc(384);
+  }
+  @include breakpoint(large) {
+    width: 32%;
+  }
+  position: relative;
+}
 
 
 

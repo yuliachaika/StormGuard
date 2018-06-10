@@ -1,0 +1,44 @@
+.hero {
+	width: 100%;
+	height: 100vh;
+	min-height: rem-calc(580);
+	@include bg('../img/bg-1.png');
+	position: relative;
+  top: rem-calc(-80);
+  &__container {
+  	height: 100%;
+  	@include row();
+  	align-items: center;
+  }
+  &__content {
+  	margin-top: rem-calc(54);
+  	padding: rem-calc(36) rem-calc(30) rem-calc(30);
+  	width: 100%;
+  	background: $main-nav-bg;
+  	max-width: rem-calc(588);
+  	@include breakpoint(medium) {
+      width: 80%;
+      max-width: rem-calc(500);
+  		padding: rem-calc(58) rem-calc(66) rem-calc(36) rem-calc(28);
+    }
+  	@include breakpoint(large) {
+      width: 50%;
+      max-width: rem-calc(588);
+    }
+  }
+  &__text {
+  	margin-bottom: rem-calc(27);
+  	@include title(30, $white);
+  	line-height: rem-calc(40);
+  	& span {
+  		color: $yellow;
+  	}
+  	@include breakpoint(medium) {
+  		font-size: rem-calc(34);
+    }
+  }
+  &__btn {
+		@include arrow();
+		@include btn($black, 25, 54);
+  }	
+}

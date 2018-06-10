@@ -11,10 +11,10 @@
       justify-content: flex-end;
     }
     &__item:not(:first-child) {
-      margin-left: rem-calc(15);
+      margin-left: rem-calc(22);
     }
     &__link {
-      @include link(14);
+      @include text-bold(14);
       line-height: rem-calc(52);
       &:hover, &:focus {
         color: $yellow;

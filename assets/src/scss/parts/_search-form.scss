@@ -1,0 +1,87 @@
+.search-form {
+	margin-top: rem-calc(-80);
+	width: 100%;
+	background-color: $yellow;
+	&__container {
+		padding: rem-calc(32) rem-calc(44) rem-calc(20);
+		@include row();
+		justify-content: space-between;
+	}
+	&__wide {
+		padding-left: rem-calc(22);
+		margin-bottom: rem-calc(12);
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+      width: rem-calc(28);
+      height: rem-calc(56);
+      @include bg('../img/shape-3.svg');
+      background-size: contain;
+      top: 0;
+      bottom: 0;
+      left: rem-calc(-24);
+      margin: auto;
+		}
+		@include breakpoint(medium) {
+			padding-left: rem-calc(62);
+      &::before {
+      	width: rem-calc(38);
+	      top: 0;
+	      bottom: 0;
+	      left: 0;
+	      margin: auto;
+      }
+    }
+	}
+	&__narrow {
+		padding-left: rem-calc(20);
+		@include row();
+		align-items: center;
+	}
+	&__title {
+		@include title(30, $black);
+		line-height: rem-calc(42);
+		@include breakpoint(medium) {
+			font-size: rem-calc(38);
+		}
+	}
+	&__text {
+		@include text-bold(16);
+		color: $black;
+	}
+	&__form {
+		font-size: 0;
+		@include row();
+		align-items: center;
+	}
+	&__input {
+		padding: rem-calc(17);
+		margin-right: rem-calc(10);
+		margin-bottom: rem-calc(12);		
+		width: rem-calc(259);
+		height: rem-calc(54);
+    @include text-bold(18);
+    line-height: rem-calc(54);
+    color: $black;
+    border: 1px solid $light-gray;
+    background-color: $white; 
+    cursor: pointer;
+    @include placeholder();
+    transition: all .4s ease-out;
+		&:hover {
+			cursor: pointer;
+			box-shadow:0 0 5px $light-gray;
+		}
+    &:focus {
+      cursor: auto;
+      @include placeholder-hov();  
+    }
+	}
+	&__submit {
+		margin-bottom: rem-calc(12);
+		font-size: rem-calc(18);
+		@include btn($white, 38, 54);
+		color: $white;
+	}
+}
