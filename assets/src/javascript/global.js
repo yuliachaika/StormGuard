@@ -25,8 +25,6 @@
       fade: true,
       arrows: false,
       respondTo: 'window',
-      autoplay: true,
-      autoplaySpeed: 2000,
       appendDots: $('.slider__nav'),
       dots: true,
       dotsClass: 'custom-dots-slider'
