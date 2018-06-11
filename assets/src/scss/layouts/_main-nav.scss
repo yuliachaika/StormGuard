@@ -17,7 +17,7 @@
 			position: absolute;
 			top: 120%;
 			right: rem-calc(15);
-			background: $main-nav-bg;
+			background: $main-nav-dark;
 			&::after {
 				width: 0px;
 				height: 0px;
@@ -28,14 +28,20 @@
 				transform: translate(0%, -100%);
 				border-left:7px solid transparent;
 				border-right:7px solid transparent;
-				border-bottom:7px solid $main-nav-bg;
+				border-bottom:7px solid $main-nav-dark;
 			}
-		}  
+		} 
 	}
 	&__item {
 		@include breakpoint(medium down) {
 			width: 100%;
 			display: block;
+		}
+		&--hidden {
+			display: block;
+			@include breakpoint(large) {
+				display: none;
+			}
 		}
 	}
 	&__link {
@@ -49,6 +55,9 @@
 			margin-bottom: rem-calc(5);
 			width: 100%;
 			display: block;
+		}
+		&--current {
+			color: $yellow;
 		}
 	}
 	&__toggle {
