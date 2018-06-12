@@ -17,8 +17,10 @@
     &--wind {
       @include bg('../img/bg-3.png');
     }
+    &--franch {
+      @include bg('../img/bg-4.png');
+    }
   }
-  
   &__container {
   	height: 100%;
   	@include row();

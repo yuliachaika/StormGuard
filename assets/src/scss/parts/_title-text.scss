@@ -1,15 +1,19 @@
 .title-text {
 	padding: rem-calc(40) 0 0;
 	margin-bottom: rem-calc(26);
+	@include breakpoint(medium) {
+		min-width: rem-calc(460);
+	}
 	@include col();
-	align-items: center;
-	&--left {
-		align-items: flex-start;
+	align-items: flex-start;
+	&--center {
+		margin: 0 auto rem-calc(26);
+		align-items: center;
 	}
 	&__title {
 		margin-bottom: rem-calc(6);
 		@include title(32, $red);
-		text-align: center;
+		line-height: rem-calc(34);
 		&--white {
 			margin-bottom: rem-calc(8);
 			color: $white;
@@ -17,13 +21,19 @@
 		}
 	}
 	&__text {
-		max-width: rem-calc(450);
 		@include text($black);
 		text-align: center;
+		text-align: left;
+		&--center {
+			max-width: rem-calc(450);
+			text-align: center;
+		}
 		&--white {
 			max-width: rem-calc(588);
 			color: $white;
-			text-align: left;
+		}
+		&--left {
+			margin-bottom: rem-calc(22);
 		}
 	}
 }

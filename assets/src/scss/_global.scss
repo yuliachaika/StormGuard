@@ -4,12 +4,6 @@
 
 html {
 	 -webkit-text-size-adjust: 100%;
-	@include breakpoint(small only) {
-		// font-size: 70%;
-	}
-	@include breakpoint(medium down) {
-		// font-size: 80%;
-	}
 }
 
 body {
@@ -48,8 +42,6 @@ input:not([type="submit"]) {
     color: $black !important; 
 	}
 }
-
-
 
 h1, h2, h3, p {
 	margin: 0; 

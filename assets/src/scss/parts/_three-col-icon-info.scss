@@ -4,10 +4,8 @@
 	align-items: center;
 	border-bottom: 1px solid $border-bt;
 	&__wrap {
-		// margin-bottom: rem-calc(28);
 		@include row();
     justify-content: flex-start;
-   	// border-bottom: 1px solid $border-bt;
 	}
 	&__item {
 		margin-bottom: rem-calc(32);
@@ -17,13 +15,9 @@
 		align-items: center;
 		@include breakpoint(small only) {
 			width: 100%;
-			// padding: 0;
 		}
 		@include breakpoint(medium only) {
 			width: 50%;
-		}
-		@include breakpoint(large) {
-			// padding: rem-calc(0);
 		}
 	}
 	&__img {

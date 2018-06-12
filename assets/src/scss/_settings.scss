@@ -67,20 +67,10 @@
 
 $global-font-size: 100%;
 $global-width: rem-calc(1230);
-// $global-lineheight: 1.5;
-// $foundation-palette: (
-//   primary: #1779ba,
-//   secondary: #767676,
-//   success: #3adb76,
-//   warning: #ffae00,
-//   alert: #cc4b37,
-// );
 $light-gray-border: #e1e1e1;
 $light-gray: #bababa;
 $slider-bg: #f7f8f8;
 $slider-dots: #d7d7d7;
-// $medium-gray: #cacaca;
-// $dark-gray: #8a8a8a;
 $border-bt: #d4d4d4;
 $black: #000;
 $white: #fff;
@@ -88,8 +78,6 @@ $yellow: #ffdd00;
 $main-nav-bg: rgba(0, 0, 0, 0.6);
 $main-nav-dark: rgba(0, 0, 0, 0.9);
 $red: #db302c;
-// $body-background: $white;
-// $body-font-color: $black;
 $body-font-family: Arial, sans-serif;
 // $body-antialiased: true;
 // $global-margin: 1rem;
@@ -115,9 +103,6 @@ $body-font-family: Arial, sans-serif;
 $breakpoints: (
   small: 0,
   medium: 640px,
-  // xs: 0,
-  // small: 640px,
-  // medium: 860px,
   large: 1024px,
   xlarge: 1200px,
   xxlarge: 1440px,

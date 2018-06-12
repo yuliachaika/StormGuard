@@ -42,26 +42,26 @@
   transition-duration: .4s;
   transition-timing-function: ease-out;
   @if $color == $red {
-      background-color: $white;
-      &:hover {
-        cursor: pointer;
-        color: $black;  
-      }  
-    } 
-   @else if $color == $white {
-			background-color: $red;
-      &:hover {
-        cursor: pointer;
-        color: $black;  
-      }  
-    }
-    @else if $color == $black {
-			background-color: $yellow;
-      &:hover {
-        cursor: pointer;
-        color: $white;  
-      }  
-   }
+    background-color: $white;
+    &:hover {
+      cursor: pointer;
+      color: $black;  
+    }  
+  } 
+  @else if $color == $white {
+   background-color: $red;
+   &:hover {
+    cursor: pointer;
+    color: $black;  
+  }  
+}
+@else if $color == $black {
+ background-color: $yellow;
+ &:hover {
+  cursor: pointer;
+  color: $white;  
+}  
+}
 }
 
 @mixin placeholder($fw) {
@@ -94,13 +94,13 @@
 
 @mixin form-hover() {
   &:hover {
-      cursor: pointer;
-      box-shadow:0 0 8px $white;
-    }
-    &:focus {
-      cursor: auto;
-      @include placeholder-hov();  
-    }
+    cursor: pointer;
+    box-shadow:0 0 8px $white;
+  }
+  &:focus {
+    cursor: auto;
+    @include placeholder-hov();  
+  }
 }
 
 @mixin three-col-item() {
