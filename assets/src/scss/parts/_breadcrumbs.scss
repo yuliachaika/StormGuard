@@ -1,4 +1,5 @@
 .breadcrumbs {
-	margin-bottom: 0;
+	margin-bottom: rem-calc(27);
 	padding: rem-calc(17) 0;
+	border-bottom: 1px solid $border-bt;
 }

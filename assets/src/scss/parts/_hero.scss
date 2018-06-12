@@ -5,12 +5,20 @@
 	@include bg('../img/bg-1.png');
 	position: relative;
   top: rem-calc(-80);
-  &--who {
+  &__bg {
     height: rem-calc(264);
     min-height: 100%;
-    background: none;
-    @include bg('../img/bg-2.png');
+    &--who {
+      @include bg('../img/bg-2.png');
+    }
+    &--res {
+      @include bg('../img/bg-3.png');
+    }
+    &--wind {
+      @include bg('../img/bg-3.png');
+    }
   }
+  
   &__container {
   	height: 100%;
   	@include row();

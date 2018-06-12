@@ -1,6 +1,7 @@
 .about {
 	&__wrap {
-		padding: rem-calc(27) 0 rem-calc(52);
+		padding-bottom: rem-calc(52);
+		// padding: rem-calc(27) 0 rem-calc(52);
 		width: 100%;
 		@include col();
 		align-items: center;
@@ -9,7 +10,6 @@
 			align-items: flex-start;
 			justify-content: space-between;
 		}
-		border-top: 1px solid $border-bt;
 		border-bottom: 1px solid $border-bt;
 	}
 	&__left {

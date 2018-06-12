@@ -6,12 +6,12 @@
 	&__wrap {
 		// margin-bottom: rem-calc(28);
 		@include row();
-		// justify-content: space-between;
-		// border-bottom: 1px solid $border-bt;
+    justify-content: flex-start;
+   	// border-bottom: 1px solid $border-bt;
 	}
 	&__item {
 		margin-bottom: rem-calc(32);
-		width: 32%;
+		width: 33.33%;
 		padding: rem-calc(16);
 		@include col();
 		align-items: center;
