@@ -6,7 +6,7 @@
 	&__wrap {
 		// margin-bottom: rem-calc(28);
 		@include row();
-		justify-content: space-between;
+		// justify-content: space-between;
 		// border-bottom: 1px solid $border-bt;
 	}
 	&__item {

@@ -1,15 +1,29 @@
 .title-text {
+	padding: rem-calc(40) 0 0;
 	margin-bottom: rem-calc(26);
 	@include col();
 	align-items: center;
+	&--left {
+		align-items: flex-start;
+	}
 	&__title {
 		margin-bottom: rem-calc(6);
 		@include title(32, $red);
 		text-align: center;
+		&--white {
+			margin-bottom: rem-calc(8);
+			color: $white;
+			text-align: left;
+		}
 	}
 	&__text {
 		max-width: rem-calc(450);
 		@include text($black);
 		text-align: center;
+		&--white {
+			max-width: rem-calc(588);
+			color: $white;
+			text-align: left;
+		}
 	}
 }

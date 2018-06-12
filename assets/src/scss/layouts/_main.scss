@@ -1,6 +1,7 @@
 .main {
+	margin-top: rem-calc(-80);
 	&-info {
-		padding: rem-calc(36) 0;
+		margin-bottom: rem-calc(5);
 	}
 	&-slider {
 		// margin-bottom: rem-calc(200);

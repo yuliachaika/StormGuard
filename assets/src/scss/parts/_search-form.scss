@@ -1,5 +1,5 @@
 .search-form {
-	margin-top: rem-calc(-80);
+	margin-bottom: rem-calc(5);
 	width: 100%;
 	background-color: $yellow;
 	&__container {
@@ -67,7 +67,7 @@
     border: 1px solid $light-gray;
     background-color: $white; 
     cursor: pointer;
-    @include placeholder();
+    @include placeholder(400);
     transition: all .4s ease-out;
 		&:hover {
 			cursor: pointer;

@@ -90,7 +90,7 @@ $main-nav-dark: rgba(0, 0, 0, 0.9);
 $red: #db302c;
 // $body-background: $white;
 // $body-font-color: $black;
-// $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: Arial, sans-serif;
 // $body-antialiased: true;
 // $global-margin: 1rem;
 // $global-padding: 1rem;
@@ -274,17 +274,17 @@ $breakpoint-classes: ( small medium large);
 // 10. Breadcrumbs
 // ---------------
 
-// $breadcrumbs-margin: 0 0 $global-margin 0;
-// $breadcrumbs-item-font-size: rem-calc(11);
-// $breadcrumbs-item-color: $primary-color;
-// $breadcrumbs-item-color-current: $black;
+// $breadcrumbs-margin: 0 0 5px 0;
+$breadcrumbs-item-font-size: rem-calc(14);
+$breadcrumbs-item-color: $red;
+$breadcrumbs-item-color-current: $black;
 // $breadcrumbs-item-color-disabled: $medium-gray;
-// $breadcrumbs-item-margin: 0.75rem;
-// $breadcrumbs-item-uppercase: true;
-// $breadcrumbs-item-separator: true;
-// $breadcrumbs-item-separator-item: '/';
+$breadcrumbs-item-margin: 0.75rem;
+$breadcrumbs-item-uppercase: false;
+$breadcrumbs-item-separator: true;
+$breadcrumbs-item-separator-item: '>';
 // $breadcrumbs-item-separator-item-rtl: '\\';
-// $breadcrumbs-item-separator-color: $medium-gray;
+$breadcrumbs-item-separator-color: $black;
 
 // 11. Button
 // ----------

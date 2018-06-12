@@ -1,0 +1,5 @@
+.contact-form {
+	@include responsive-width(588);
+	@include breakpoint(large) {
+  }
+}

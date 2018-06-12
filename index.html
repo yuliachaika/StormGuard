@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>StormGuard</title>
+	<link rel="shortcut icon" href="assets/dist/img/fav.png">
   <link rel="stylesheet" href="assets/dist/css/style.css"> <!-- Main CSS -->
 </head>
 <body>
@@ -19,7 +20,7 @@
     			<a class="nav-top__link" href="#">Home</a>
     		</li>
     		<li class="nav-top__item">
-    			<a class="nav-top__link" href="#">Who We Are</a>
+    			<a class="nav-top__link" href="who-we-are.html">Who We Are</a>
     		</li>
     		<li class="nav-top__item">
     			<a class="nav-top__link" href="#">Services</a>
@@ -62,10 +63,10 @@
 	    			<a class="main-nav__link" href="#">Contact</a>
 	    		</li>
 	    		<li class="main-nav__item main-nav__item--hidden">
-    				<a class="main-nav__link main-nav__link--current" href="#">Home</a>
+    				<a class="main-nav__link main-nav__link--current" href="index.html">Home</a>
 	    		</li>
 	    		<li class="main-nav__item main-nav__item--hidden">
-	    			<a class="main-nav__link" href="#">Who We Are</a>
+	    			<a class="main-nav__link" href="who-we-are.html">Who We Are</a>
 	    		</li>
 	    		<li class="main-nav__item main-nav__item--hidden">
 	    			<a class="main-nav__link" href="#">Services</a>
@@ -355,10 +356,137 @@
 		<!-- /.container -->
 	</section>
 	<!-- /.posts -->
+	<section class="contact-form-gallery">
+		<div class="container contact-form-gallery__container">
+			<div class="contact-form-gallery__wrap">
+				<div class="contact-form-gallery__contact contact-form">
+					<div class="title-text title-text--left">
+						<h2 class="title-text__title title-text__title--white">Contact Us Today</h2>
+        		<p class="title-text__text title-text__text--white">Need more information about our services or insurance claims? Fill out the form below and representitive will be in touch!</p>
+					</div>
+					<form class="contact-form__form form">
+					<p class="form__narrow">
+						<input class="form__input" type="text" name="name" id="name" placeholder="Name" required>
+	  				<label for="name"></label>
+	  			</p>
+					<p class="form__narrow">
+						<input class="form__input" type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+						<label for="tel"></label>
+					</p>
+					<p class="form__narrow">
+						<input class="form__input" type="text" name="zipcode" id="zipcode" placeholder="Zipcode" required>
+						<label for="zipcode"></label>
+					</p>
+					<p class="form__narrow">
+						<input class="form__input" type="email" name="email" id="email" placeholder="Email" required>
+						<label for="email"></label>
+					</p>
+					<p class="form__wide">
+			      <select name="select-box" id="selectId" class="form__select">
+						  <option value="option1" name="value">option1</option>
+						  <option value="option2" name="value">option2</option>
+						</select>
+					</p>
+					<p class="form__wide">
+						<label for="msg"></label>
+	    			<textarea class="form__area" id="msg" name="user_message" placeholder="Comments"></textarea>
+					</p>
+					<p class="form__btn"><button type="submit" class="form__submit">Submit</button></p>
+					</form>
+					<!-- /form -->
+				</div>
+				<!-- /.contact-form -->
+				<div class="contact-form-gallery__gallery gallery">
+					<div class="title-text title-text--left">
+						<h2 class="title-text__title title-text__title--white">Check Out Our Past Projects</h2>
+        		<p class="title-text__text title-text__text--white">Want to see examples of our past work? Check out the gallery below to see projects we have completed in the past.</p>
+					</div>
+					<div class="gallery__content">
+						<div class="gallery__wrap">
+							<div class="gallery__item">
+								<a href="#" class="gallery__link">
+									<img class="gallery__img" src="assets/dist/img/bigstock-4.png" alt="gallery-item">
+								</a>
+							</div>
+							<div class="gallery__item">
+								<a href="#" class="gallery__link">
+									<img class="gallery__img" src="assets/dist/img/bigstock-4.png" alt="gallery-item">
+								</a>
+							</div>
+							<div class="gallery__item">
+								<a href="#" class="gallery__link">
+									<img class="gallery__img" src="assets/dist/img/bigstock-4.png" alt="gallery-item">
+								</a>
+							</div>
+							<div class="gallery__item">
+								<a href="#" class="gallery__link">
+									<img class="gallery__img" src="assets/dist/img/bigstock-4.png" alt="gallery-item">
+								</a>
+							</div>
+							<div class="gallery__item">
+								<a href="#" class="gallery__link">
+									<img class="gallery__img" src="assets/dist/img/bigstock-4.png" alt="gallery-item">
+								</a>
+							</div>
+							<div class="gallery__item">
+								<a href="#" class="gallery__link">
+									<img class="gallery__img" src="assets/dist/img/bigstock-4.png" alt="gallery-item">
+								</a>
+							</div>
+							<div class="gallery__item">
+								<a href="#" class="gallery__link">
+									<img class="gallery__img" src="assets/dist/img/bigstock-4.png" alt="gallery-item">
+								</a>
+							</div>
+							<div class="gallery__item">
+								<a href="#" class="gallery__link">
+									<img class="gallery__img" src="assets/dist/img/bigstock-4.png" alt="gallery-item">
+								</a>
+							</div>
+						</div>
+						<a class="gallery__btn" href="#">View more photos</a>
+					</div>
+				</div>
+				<!-- /.gallery -->
+			</div>
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.contact-form-gallery -->
 </main>
 <!-- /main -->
-
-
+<footer class="footer">
+	<div class="container footer__container">
+		<div class="footer__left">
+			<p class="footer__text">
+				Copyright 2017. Storm Guard. All Rights Reserved. Website Produced by:&nbsp;<a href="#" class="footer__link" target="_blank">Inverse Paradox</a>
+			</p>
+		</div>
+		<!-- /left -->
+		<div class="footer__right">
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a href="#" target="_blank" class="footer__link">Customer Service</a>
+				</li>
+				<li class="footer__item">
+					<a href="#" target="_blank" class="footer__link">Careers</a>
+				</li>
+				<li class="footer__item">
+					<a href="#" target="_blank" class="footer__link">Terms &amp; Conditions</a>
+				</li>
+				<li class="footer__item">
+					<a href="#" target="_blank" class="footer__link">Privacy Policy</a>
+				</li>
+				<li class="footer__item">
+					<a href="#" target="_blank" class="footer__link">Sitemap</a>
+				</li>
+			</ul>                   
+		</div>
+		<!-- /right -->
+	</div>
+	<!-- /.container -->
+</footer>
+<!-- /footer -->
 	<script src="assets/dist/javascript/global.min.js"></script> <!-- Main Script -->
 </body>
 </html>

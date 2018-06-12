@@ -1,0 +1,43 @@
+.about {
+	&__wrap {
+		padding: rem-calc(27) 0 rem-calc(52);
+		width: 100%;
+		@include col();
+		align-items: center;
+		@include breakpoint(large) {
+			@include row();
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+		border-top: 1px solid $border-bt;
+		border-bottom: 1px solid $border-bt;
+	}
+	&__left {
+		margin-bottom: rem-calc(30);
+		width: 100%;
+		max-width: rem-calc(530);
+		@include breakpoint(large) {
+			margin-bottom: 0;
+			width: 40%;
+		}
+	}
+	&__right {
+		width: 100%;
+		@include breakpoint(large) {
+			padding-left: rem-calc(23);
+			width: 60%;
+		}
+	}
+	&__title {
+		margin-bottom: rem-calc(20);
+		@include title(34, $red);
+		line-height: rem-calc(28);
+	}
+	&__text {
+		margin-bottom: rem-calc(20);
+		@include text($black);
+	}
+}
+
+
+

@@ -37,6 +37,7 @@
   @include text-bold(16); 
   color: $color;
   line-height: rem-calc($lh); 
+  text-transform: capitalize;
   transition-property: background-color, color;
   transition-duration: .4s;
   transition-timing-function: ease-out;
@@ -63,18 +64,18 @@
    }
 }
 
-@mixin placeholder() {
+@mixin placeholder($fw) {
   &::-webkit-input-placeholder, 
   &::-moz-placeholder,
   &:-moz-placeholder, 
   &:-ms-input-placeholder {
     color: $light-gray !important;
-    font-weight: 400;
+    font-weight: $fw;
     transition: all .4s ease-out;
   }
   &::placeholder {
     color: $light-gray;
-    font-weight: 400;
+    font-weight: $fw;
     transition: all .4s ease-out;
   }
 }
@@ -84,19 +85,26 @@
   &::-moz-placeholder,
   &:-moz-placeholder, 
   &:-ms-input-placeholder {
-    color: $light-gray !important;
-    font-weight: 400;
     opacity: 0;
   }
   &::placeholder {
-    color: $light-gray;
-    font-weight: 400;
     opacity: 0;
   }
 }
 
+@mixin form-hover() {
+  &:hover {
+      cursor: pointer;
+      box-shadow:0 0 8px $white;
+    }
+    &:focus {
+      cursor: auto;
+      @include placeholder-hov();  
+    }
+}
+
 @mixin three-col-item() {
-  margin-bottom: rem-calc(30);
+  margin-bottom: rem-calc(21);
   max-width: rem-calc(384);
   @include breakpoint(small only) {
     max-width: rem-calc(384);
@@ -107,10 +115,14 @@
   position: relative;
 }
 
-
-
-
-
+@mixin responsive-width($w) {
+  width: 100%;
+  max-width: rem-calc($w);
+  @include breakpoint(large) {
+    width: 49%;
+    max-width: rem-calc($w);
+  }
+}
 
 
 
