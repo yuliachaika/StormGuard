@@ -1,0 +1,17 @@
+.text-img {
+	&__float {
+		margin: 0 auto rem-calc(20);
+		max-width: rem-calc(593);
+		@include breakpoint(large) {
+			margin: 0 rem-calc(10) rem-calc(10);
+			float: right;
+		}
+	}
+	&__link {
+		@include text($red);
+		border-bottom: 1px solid;
+		&:hover {
+			color: $black;
+		}
+	}
+}

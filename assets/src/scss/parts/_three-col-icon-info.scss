@@ -4,26 +4,20 @@
 	align-items: center;
 	border-bottom: 1px solid $border-bt;
 	&__wrap {
-		// margin-bottom: rem-calc(28);
 		@include row();
-		justify-content: space-between;
-		// border-bottom: 1px solid $border-bt;
+    justify-content: flex-start;
 	}
 	&__item {
 		margin-bottom: rem-calc(32);
-		width: 32%;
+		width: 33.33%;
 		padding: rem-calc(16);
 		@include col();
 		align-items: center;
 		@include breakpoint(small only) {
 			width: 100%;
-			// padding: 0;
 		}
 		@include breakpoint(medium only) {
 			width: 50%;
-		}
-		@include breakpoint(large) {
-			// padding: rem-calc(0);
 		}
 	}
 	&__img {

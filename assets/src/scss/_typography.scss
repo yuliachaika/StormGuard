@@ -7,31 +7,10 @@
 		url('../fonts/EurostileLTStd-Demi.woff') format('woff'),
 		url('../fonts/EurostileLTStd-Demi.svg#EurostileLTStd-Demi') format('svg');
     font-weight: 400;
-    // font-style: normal;
-    // font-stretch: normal;
-    // unicode-range: U+0020-EA6A;
 }
-
-@font-face {
-    font-family:'Helvetica';
-    src: url('../fonts/Helvetica.eot');
-		src: url('../fonts/Helvetica.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Helvetica.woff2') format('woff2'),
-		url('../fonts/Helvetica.woff') format('woff'),
-		url('../fonts/Helvetica.svg#Helvetica') format('svg');
-    font-weight: 400;
-    // font-style: normal;
-    // font-stretch: normal;
-    // unicode-range: U+0020-2215;
-}
-
-//font-awesome
-// $fa-font-path:  "../fonts";
-// @import "../../../node_modules/font-awesome/scss/font-awesome";
 
 //fonts variables
 $primary-font-family: 'Eurostile LT Std - Demi', 'Arial', sans-serif;
-// $second-font-family: 'Helvetica', 'Arial', sans-serif;
 $second-font-family: 'Arial', sans-serif;
 
 //fonts mixins
@@ -41,7 +20,14 @@ $second-font-family: 'Arial', sans-serif;
   font-size: rem-calc($px);
   font-weight: 700;
   text-transform: capitalize;
+}
 
+@mixin text-regular() {
+  color: $white;
+  font-family: $second-font-family;
+  font-size: rem-calc(12);
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 @mixin title($px, $color) {
@@ -68,14 +54,6 @@ $second-font-family: 'Arial', sans-serif;
 }
 
 
-
-// @mixin title($px, $color) {
-//   color: $color;
-//   font-family: $primary-font;
-//   font-size: rem-calc($px);
-//   font-weight: 400;
-//   line-height: 1.3; 
-// }
 
 
 

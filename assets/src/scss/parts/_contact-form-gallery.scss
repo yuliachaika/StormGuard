@@ -1,0 +1,12 @@
+.contact-form-gallery {
+	width: 100%;
+	padding: rem-calc(30) 0 rem-calc(35);
+	background-color: $red;
+	&__wrap {
+		@include row();
+		justify-content: center;
+		@include breakpoint(large) {
+	    justify-content: space-between;
+  	}
+	}
+}

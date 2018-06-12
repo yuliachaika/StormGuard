@@ -1,0 +1,34 @@
+.gallery {
+	@include responsive-width(576);
+	@include breakpoint(large) {
+  }
+  &__content {
+  	@include col();
+		align-items: center;
+  }
+	&__wrap {
+		margin-bottom: rem-calc(5);
+		width: 100%;
+		@include row();
+		justify-content: space-between;
+	}
+	&__item {
+		margin-bottom: rem-calc(20);
+		border: rem-calc(1) solid $white;
+		width: 23%;
+		max-width: rem-calc(129);
+		&:nth-child(4n) {
+			padding-right: 0;
+		}
+	}
+	&__link {
+		display: block;
+		transition: all .4s ease-out;
+		&:hover {
+			box-shadow: 2px 2px 8px $white;
+		}
+	}
+	&__btn {
+		@include btn($red, 37, 62);
+	}
+}

@@ -1,0 +1,62 @@
+.form {
+	width: 100%;
+	font-size: 0;
+	@include row();
+	justify-content: space-between;
+	& * {
+		font-size: 16px;
+	}
+	&__narrow {
+		width: 100%;
+		@include breakpoint(medium) {
+		width: 49%;
+		}
+	}
+	&__wide {
+		width: 100%;
+	}
+	&__input {
+		width: 100%;
+		padding: 0 rem-calc(10);
+		margin-bottom: rem-calc(24);		
+		height: rem-calc(37);
+    @include text-italics(16);
+    line-height: rem-calc(37);
+    color: $black;
+    border: none;
+    background-color: $white; 
+    cursor: pointer;
+    @include placeholder(400);
+    transition: all .4s ease-out;
+    @include form-hover();
+	}
+	&__select {
+
+	}
+	&__area {
+		margin-bottom: rem-calc(18);
+		padding: rem-calc(10) rem-calc(10);
+		width: 100%;
+		resize: none;
+		border: none;
+		min-height: rem-calc(168);
+		@include text-italics(16);
+		@include placeholder(400);
+		@include form-hover();
+		
+	}
+	&__submit {
+		margin-bottom: rem-calc(35);
+		@include btn($red, 34, 62);
+		@include breakpoint(large) {
+	    margin-bottom: 0;
+  	}
+	}
+	&__btn {
+		width: 100%;
+		@include row();
+		justify-content: flex-end;
+	}
+}
+
+

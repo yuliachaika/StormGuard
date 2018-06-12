@@ -17,7 +17,7 @@
       @include text-bold(14);
       line-height: rem-calc(52);
       &:hover, &:focus {
-        color: $yellow;
+        color: $red;
       }
     } 
   }
