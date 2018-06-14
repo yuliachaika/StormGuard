@@ -10,16 +10,19 @@
       @include row();
       justify-content: flex-end;
     }
-    &__item:not(:first-child) {
-      margin-left: rem-calc(22);
+    &__item {
+      &:not(:first-child) {
+        margin-left: rem-calc(22);
+      } 
+      & > a {
+        @include text-bold(14);
+        line-height: rem-calc(52);
+        &:hover, &:focus {
+          color: $red;
+        }
+      } 
     }
-    &__link {
-      @include text-bold(14);
-      line-height: rem-calc(52);
-      &:hover, &:focus {
-        color: $red;
-      }
-    } 
+    
   }
 }
 
